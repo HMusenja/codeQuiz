@@ -1,0 +1,1036 @@
+{
+  "JavaScript": {
+    "Easy": [
+      {
+        "question": "What is the output of `console.log('5' - 2)`?",
+        "choices": [
+          "3",
+          "52",
+          "NaN"
+        ],
+        "answer": "3",
+        "explanation": "In JavaScript, when a string is subtracted from a number, the string is converted to a number, so '5' - 2 results in 3."
+      },
+      {
+        "question": "Which method removes the last item from an array?",
+        "choices": [
+          "pop()",
+          "shift()",
+          "unshift()"
+        ],
+        "answer": "pop()",
+        "explanation": "The `pop()` method removes the last item from an array and returns that item."
+      },
+      {
+        "question": "What is the result of `true + 1`?",
+        "choices": [
+          "2",
+          "true1",
+          "NaN"
+        ],
+        "answer": "2",
+        "explanation": "In JavaScript, `true` is coerced to `1` in arithmetic operations, so `true + 1` results in `2`."
+      },
+      {
+        "question": "What is the correct syntax for a for loop in JavaScript?",
+        "choices": [
+          "for (var i = 0; i < 5; i++) {}",
+          "for (i = 0; i < 5; i++) {}",
+          "for i = 0; i < 5; i++ {}"
+        ],
+        "answer": "for (var i = 0; i < 5; i++) {}",
+        "explanation": "The correct syntax for a for loop in JavaScript is `for (var i = 0; i < 5; i++) {}`."
+      },
+      {
+        "question": "What does `null` represent in JavaScript?",
+        "choices": [
+          "An empty value",
+          "A type of object",
+          "An undefined value"
+        ],
+        "answer": "An empty value",
+        "explanation": "In JavaScript, `null` represents the intentional absence of any object value."
+      },
+      {
+        "question": "How do you access the first element of an array named 'myArray'?",
+        "choices": [
+          "myArray[0]",
+          "myArray.first()",
+          "myArray[1]"
+        ],
+        "answer": "myArray[0]",
+        "explanation": "In JavaScript, array elements are accessed using zero-based indexing, so the first element is accessed with `myArray[0]`."
+      },
+      {
+        "question": "What does 'JS' stand for?",
+        "choices": [
+          "JavaScript",
+          "JavaState",
+          "JustStyle"
+        ],
+        "answer": "JavaScript",
+        "explanation": "JS stands for JavaScript, which is a popular programming language primarily used for web development."
+      },
+      {
+        "question": "Which symbol is used for comments in JavaScript?",
+        "choices": [
+          "//",
+          "#",
+          "/*"
+        ],
+        "answer": "//",
+        "explanation": "In JavaScript, '//' is used for single-line comments."
+      },
+      {
+        "question": "What will `typeof 10` return?",
+        "choices": [
+          "number",
+          "string",
+          "undefined"
+        ],
+        "answer": "number",
+        "explanation": "The 'typeof' operator returns the type of a variable. `typeof 10` returns 'number'."
+      },
+      {
+        "question": "Which data type is used to store text?",
+        "choices": [
+          "Number",
+          "String",
+          "Boolean"
+        ],
+        "answer": "String",
+        "explanation": "In JavaScript, the 'String' data type is used to store text, like sentences or words."
+      },
+      {
+        "question": "What does the `Array.isArray()` method do?",
+        "choices": [
+          "Checks if a value is an array",
+          "Creates a new array",
+          "Sorts an array"
+        ],
+        "answer": "Checks if a value is an array",
+        "explanation": "The `Array.isArray()` method determines whether the provided value is an array."
+      },
+      {
+        "question": "How do you define a function in JavaScript?",
+        "choices": [
+          "function myFunction() {}",
+          "function: myFunction() {}",
+          "def myFunction() {}"
+        ],
+        "answer": "function myFunction() {}",
+        "explanation": "The syntax to define a function in JavaScript is `function myFunction() {}`."
+      },
+      {
+        "question": "What is the keyword to declare a constant variable?",
+        "choices": [
+          "var",
+          "let",
+          "const"
+        ],
+        "answer": "const",
+        "explanation": "The 'const' keyword is used to declare a constant variable, which cannot be reassigned."
+      },
+      {
+        "question": "Which method is used to add an item to the end of an array?",
+        "choices": [
+          "push()",
+          "pop()",
+          "shift()"
+        ],
+        "answer": "push()",
+        "explanation": "The 'push()' method adds one or more items to the end of an array."
+      },
+      {
+        "question": "Which operator is used to compare two values for equality?",
+        "choices": [
+          "==",
+          "=",
+          "==="
+        ],
+        "answer": "===",
+        "explanation": "The `===` operator checks for both value and type equality."
+      }
+    ],
+    "Medium": [
+      {
+        "question": "What is the output of `console.log('5' - 2)`?",
+        "choices": [
+          "3",
+          "52",
+          "NaN"
+        ],
+        "answer": "3",
+        "explanation": "In JavaScript, when a string is subtracted from a number, the string is converted to a number, so '5' - 2 results in 3."
+      },
+      {
+        "question": "Which method removes the last item from an array?",
+        "choices": [
+          "pop()",
+          "shift()",
+          "unshift()"
+        ],
+        "answer": "pop()",
+        "explanation": "The `pop()` method removes the last item from an array and returns that item."
+      },
+      {
+        "question": "What is the result of `true + 1`?",
+        "choices": [
+          "2",
+          "true1",
+          "NaN"
+        ],
+        "answer": "2",
+        "explanation": "In JavaScript, `true` is coerced to `1` in arithmetic operations, so `true + 1` results in `2`."
+      },
+      {
+        "question": "What is the correct syntax for a for loop in JavaScript?",
+        "choices": [
+          "for (var i = 0; i < 5; i++) {}",
+          "for (i = 0; i < 5; i++) {}",
+          "for i = 0; i < 5; i++ {}"
+        ],
+        "answer": "for (var i = 0; i < 5; i++) {}",
+        "explanation": "The correct syntax for a for loop in JavaScript is `for (var i = 0; i < 5; i++) {}`."
+      },
+      {
+        "question": "What does `null` represent in JavaScript?",
+        "choices": [
+          "An empty value",
+          "A type of object",
+          "An undefined value"
+        ],
+        "answer": "An empty value",
+        "explanation": "In JavaScript, `null` represents the intentional absence of any object value."
+      }
+    ],
+    "Hard": [
+      {
+        "question": "What does 'use strict' do in JavaScript?",
+        "choices": [
+          "Makes code strict",
+          "Strict mode",
+          "No effect"
+        ],
+        "answer": "Strict mode",
+        "explanation": "'use strict' enables strict mode in JavaScript, making the code execute with stricter parsing and error handling rules."
+      },
+      {
+        "question": "What is a closure?",
+        "choices": [
+          "Function with variables",
+          "Function inside function",
+          "Object"
+        ],
+        "answer": "Function inside function",
+        "explanation": "A closure in JavaScript is a function that remembers the environment in which it was created, even after the outer function has finished executing."
+      },
+      {
+        "question": "What is the output of `typeof []`?",
+        "choices": [
+          "object",
+          "array",
+          "undefined"
+        ],
+        "answer": "object",
+        "explanation": "In JavaScript, `typeof []` returns 'object' because arrays are a type of object."
+      },
+      {
+        "question": "What is the difference between `==` and `===` in JavaScript?",
+        "choices": [
+          "`==` compares values, `===` compares values and types",
+          "No difference",
+          "`==` compares types, `===` compares values"
+        ],
+        "answer": "`==` compares values, `===` compares values and types",
+        "explanation": "The `==` operator checks for value equality with type coercion, while `===` checks for both value and type equality."
+      },
+      {
+        "question": "What is the purpose of the `bind()` method in JavaScript?",
+        "choices": [
+          "Binds a function to a specific context",
+          "Creates a new array",
+          "Converts a function to a string"
+        ],
+        "answer": "Binds a function to a specific context",
+        "explanation": "The `bind()` method creates a new function that, when called, has its `this` keyword set to a specific value."
+      },
+      {
+        "question": "What is an IIFE (Immediately Invoked Function Expression)?",
+        "choices": [
+          "A function that is executed immediately after its definition",
+          "A function that returns another function",
+          "A function that is invoked by a global event"
+        ],
+        "answer": "A function that is executed immediately after its definition",
+        "explanation": "An IIFE is a function that is executed immediately after being defined, often used to create a local scope."
+      },
+      {
+        "question": "What is event delegation in JavaScript?",
+        "choices": [
+          "A technique to handle events at a higher level in the DOM",
+          "A method to create event listeners",
+          "A way to capture events from multiple sources"
+        ],
+        "answer": "A technique to handle events at a higher level in the DOM",
+        "explanation": "Event delegation involves setting up a single event listener on a parent element to handle events for its child elements."
+      },
+      {
+        "question": "What is the `async` keyword used for in JavaScript?",
+        "choices": [
+          "Defines an asynchronous function",
+          "Makes a function synchronous",
+          "Binds a function to a specific context"
+        ],
+        "answer": "Defines an asynchronous function",
+        "explanation": "The `async` keyword is used to define a function that performs asynchronous operations and returns a promise."
+      },
+      {
+        "question": "How does JavaScript handle asynchronous operations?",
+        "choices": [
+          "Using callbacks, promises, and async/await",
+          "By blocking the main thread",
+          "Using synchronous functions only"
+        ],
+        "answer": "Using callbacks, promises, and async/await",
+        "explanation": "JavaScript handles asynchronous operations using callbacks, promises, and the async/await syntax to manage tasks that run in parallel."
+      },
+      {
+        "question": "What does `Object.freeze()` do?",
+        "choices": [
+          "Prevents modifications to an object",
+          "Freezes the execution of a function",
+          "Cleans up an object's memory"
+        ],
+        "answer": "Prevents modifications to an object",
+        "explanation": "`Object.freeze()` prevents modifications to an object by making it immutable."
+      },
+      {
+        "question": "What is the output of `console.log(0.1 + 0.2 === 0.3)`?",
+        "choices": [
+          "false",
+          "true",
+          "undefined"
+        ],
+        "answer": "false",
+        "explanation": "Due to floating-point precision issues, `0.1 + 0.2` does not exactly equal `0.3`, so the result is `false`."
+      },
+      {
+        "question": "What does the `reduce()` method do in arrays?",
+        "choices": [
+          "Applies a function against an accumulator and each element",
+          "Filters elements based on a condition",
+          "Maps each element to a new value"
+        ],
+        "answer": "Applies a function against an accumulator and each element",
+        "explanation": "The `reduce()` method applies a function against an accumulator and each element of the array, resulting in a single value."
+      },
+      {
+        "question": "What is a prototype in JavaScript?",
+        "choices": [
+          "An object from which other objects inherit properties",
+          "A special type of function",
+          "A built-in object in JavaScript"
+        ],
+        "answer": "An object from which other objects inherit properties",
+        "explanation": "A prototype is an object from which other objects inherit properties and methods in JavaScript's prototype-based inheritance system."
+      },
+      {
+        "question": "What is a promise in JavaScript?",
+        "choices": [
+          "An object representing the eventual completion or failure of an asynchronous operation",
+          "A function that returns a value",
+          "A special type of loop"
+        ],
+        "answer": "An object representing the eventual completion or failure of an asynchronous operation",
+        "explanation": "A promise is an object that represents the eventual result of an asynchronous operation, either resolved or rejected."
+      }
+    ]
+  },
+  "HTML": {
+    "Easy": [
+      {
+        "question": "What does HTML stand for?",
+        "choices": [
+          "HyperText Markup Language",
+          "HyperTool Markup Language",
+          "Hyperlinks"
+        ],
+        "answer": "HyperText Markup Language",
+        "explanation": "HTML stands for HyperText Markup Language, which is used to structure web pages."
+      },
+      {
+        "question": "Which tag is used for headers?",
+        "choices": [
+          "<h1>",
+          "<head>",
+          "<header>"
+        ],
+        "answer": "<h1>",
+        "explanation": "The <h1> tag is used for the largest heading in HTML, representing the main title."
+      },
+      {
+        "question": "What is the correct HTML element for inserting an image?",
+        "choices": [
+          "<img>",
+          "<image>",
+          "<pic>"
+        ],
+        "answer": "<img>",
+        "explanation": "The <img> tag is used to embed images in a web page."
+      },
+      {
+        "question": "Which tag is used to create a list item?",
+        "choices": [
+          "<li>",
+          "<list>",
+          "<item>"
+        ],
+        "answer": "<li>",
+        "explanation": "The <li> tag is used to define individual items within an ordered (<ol>) or unordered (<ul>) list."
+      },
+      {
+        "question": "What does the <a> tag define?",
+        "choices": [
+          "A hyperlink",
+          "An image",
+          "A list"
+        ],
+        "answer": "A hyperlink",
+        "explanation": "The <a> tag is used to create hyperlinks that link to other web pages or resources."
+      },
+      {
+        "question": "Which tag is used for creating a table?",
+        "choices": [
+          "<table>",
+          "<tab>",
+          "<tr>"
+        ],
+        "answer": "<table>",
+        "explanation": "The <table> tag is used to define a table in HTML."
+      },
+      {
+        "question": "How do you make text bold in HTML?",
+        "choices": [
+          "<b>",
+          "<bold>",
+          "<strong>"
+        ],
+        "answer": "<b>",
+        "explanation": "The <b> tag is used to make text bold, while <strong> also indicates that the text is of strong importance."
+      },
+      {
+        "question": "Which tag is used for line breaks?",
+        "choices": [
+          "<br>",
+          "<break>",
+          "<lb>"
+        ],
+        "answer": "<br>",
+        "explanation": "The <br> tag is used to insert a line break in HTML."
+      },
+      {
+        "question": "What is the correct HTML element for inserting a line break?",
+        "choices": [
+          "<br>",
+          "<linebreak>",
+          "<break>"
+        ],
+        "answer": "<br>",
+        "explanation": "The <br> tag is used to insert a line break in HTML."
+      },
+      {
+        "question": "What is the purpose of the <title> tag?",
+        "choices": [
+          "Defines the title of the document",
+          "Defines the body of the document",
+          "Defines a heading"
+        ],
+        "answer": "Defines the title of the document",
+        "explanation": "The <title> tag specifies the title of the HTML document, which is displayed in the browser's title bar or tab."
+      },
+      {
+        "question": "What does the <meta> tag provide?",
+        "choices": [
+          "Metadata about the HTML document",
+          "Content for the HTML document",
+          "JavaScript functions"
+        ],
+        "answer": "Metadata about the HTML document",
+        "explanation": "The <meta> tag provides metadata such as character set, author, and viewport settings for the HTML document."
+      },
+      {
+        "question": "Which tag is used to define the main content of the document?",
+        "choices": [
+          "<main>",
+          "<content>",
+          "<body>"
+        ],
+        "answer": "<main>",
+        "explanation": "The <main> tag represents the dominant content of the document, excluding headers, footers, and sidebars."
+      },
+      {
+        "question": "How do you define a form in HTML?",
+        "choices": [
+          "<form>",
+          "<input>",
+          "<submit>"
+        ],
+        "answer": "<form>",
+        "explanation": "The <form> tag is used to define an HTML form for user input."
+      },
+      {
+        "question": "What does the <footer> tag represent?",
+        "choices": [
+          "Footer of the document",
+          "Header of the document",
+          "Navigation links"
+        ],
+        "answer": "Footer of the document",
+        "explanation": "The <footer> tag represents the footer section of a document or section, often including information like contact details or copyright."
+      }
+    ],
+    "Medium": [
+      {
+        "question": "What is the correct HTML element for the largest heading?",
+        "choices": [
+          "<h1>",
+          "<h6>",
+          "<head>"
+        ],
+        "answer": "<h1>",
+        "explanation": "The <h1> tag defines the largest heading, while <h6> defines the smallest."
+      },
+      {
+        "question": "Which tag is used to create a hyperlink?",
+        "choices": [
+          "<a>",
+          "<link>",
+          "<href>"
+        ],
+        "answer": "<a>",
+        "explanation": "The <a> tag is used to create a hyperlink in HTML, which links to other web pages or resources."
+      },
+      {
+        "question": "What is the correct HTML element for an unordered list?",
+        "choices": [
+          "<ul>",
+          "<ol>",
+          "<list>"
+        ],
+        "answer": "<ul>",
+        "explanation": "The <ul> tag is used to create an unordered list, where list items are marked with bullets."
+      },
+      {
+        "question": "Which HTML attribute specifies an alternate text for an image if the image cannot be displayed?",
+        "choices": [
+          "alt",
+          "src",
+          "title"
+        ],
+        "answer": "alt",
+        "explanation": "The 'alt' attribute provides a text description for an image, important for accessibility and in cases where the image cannot be displayed."
+      },
+      {
+        "question": "What is the purpose of the <script> tag in HTML?",
+        "choices": [
+          "Defines JavaScript code",
+          "Defines styles",
+          "Defines a form"
+        ],
+        "answer": "Defines JavaScript code",
+        "explanation": "The <script> tag is used to define and include JavaScript code within an HTML document."
+      },
+      {
+        "question": "How do you specify a CSS file in HTML?",
+        "choices": [
+          "<link rel='stylesheet' href='styles.css'>",
+          "<style src='styles.css'>",
+          "<css file='styles.css'>"
+        ],
+        "answer": "<link rel='stylesheet' href='styles.css'>",
+        "explanation": "The <link> tag with `rel='stylesheet'` is used to include an external CSS file."
+      },
+      {
+        "question": "Which tag is used to group block elements in HTML?",
+        "choices": [
+          "<div>",
+          "<span>",
+          "<section>"
+        ],
+        "answer": "<div>",
+        "explanation": "The <div> tag is used to group block-level elements together for styling or layout purposes."
+      },
+      {
+        "question": "What does the <style> tag define in HTML?",
+        "choices": [
+          "CSS styles",
+          "JavaScript functions",
+          "HTML content"
+        ],
+        "answer": "CSS styles",
+        "explanation": "The <style> tag is used to define CSS styles directly within an HTML document."
+      },
+      {
+        "question": "What does the <iframe> tag do in HTML?",
+        "choices": [
+          "Defines an inline frame",
+          "Defines a form",
+          "Defines a hyperlink"
+        ],
+        "answer": "Defines an inline frame",
+        "explanation": "The <iframe> tag is used to embed another HTML document within the current document."
+      },
+      {
+        "question": "Which tag is used to create a numbered list?",
+        "choices": [
+          "<ol>",
+          "<ul>",
+          "<list>"
+        ],
+        "answer": "<ol>",
+        "explanation": "The <ol> tag is used to create an ordered (numbered) list in HTML."
+      },
+      {
+        "question": "What is the purpose of the <meta charset='UTF-8'> tag?",
+        "choices": [
+          "Specifies the character encoding for the document",
+          "Specifies the title of the document",
+          "Specifies the viewport settings"
+        ],
+        "answer": "Specifies the character encoding for the document",
+        "explanation": "The <meta charset='UTF-8'> tag specifies the character encoding for the HTML document, ensuring proper text rendering."
+      },
+      {
+        "question": "What does the <nav> tag represent in HTML?",
+        "choices": [
+          "Navigation links",
+          "A section of the document",
+          "A footer section"
+        ],
+        "answer": "Navigation links",
+        "explanation": "The <nav> tag represents a section of a document intended for navigation links."
+      },
+      {
+        "question": "Which tag is used to define a table header cell?",
+        "choices": [
+          "<th>",
+          "<td>",
+          "<tr>"
+        ],
+        "answer": "<th>",
+        "explanation": "The <th> tag is used to define a header cell in a table, typically displayed in bold and centered."
+      },
+      {
+        "question": "How do you define a block of code in HTML?",
+        "choices": [
+          "<code>",
+          "<pre>",
+          "<script>"
+        ],
+        "answer": "<pre>",
+        "explanation": "The <pre> tag is used to define preformatted text or code, preserving whitespace and line breaks."
+      }
+    ],
+    "Hard": [
+      {
+        "question": "What is the purpose of the 'alt' attribute in images?",
+        "choices": [
+          "Alternate image",
+          "Image title",
+          "Image description"
+        ],
+        "answer": "Image description",
+        "explanation": "The 'alt' attribute provides a text description for images, which is important for accessibility and in cases where the image cannot be displayed."
+      },
+      {
+        "question": "Which tag is used to define a list item?",
+        "choices": [
+          "<li>",
+          "<ul>",
+          "<ol>"
+        ],
+        "answer": "<li>",
+        "explanation": "The <li> tag is used to define individual items within an ordered (<ol>) or unordered (<ul>) list."
+      },
+      {
+        "question": "What does the <noscript> tag do?",
+        "choices": [
+          "Defines alternative content for browsers that do not support JavaScript",
+          "Defines a script block",
+          "Defines a fallback stylesheet"
+        ],
+        "answer": "Defines alternative content for browsers that do not support JavaScript",
+        "explanation": "The <noscript> tag provides alternative content to be displayed if the browser does not support JavaScript."
+      },
+      {
+        "question": "What is the use of the <meta name='viewport'> tag?",
+        "choices": [
+          "Controls the layout on mobile browsers",
+          "Defines the character encoding",
+          "Specifies the author of the document"
+        ],
+        "answer": "Controls the layout on mobile browsers",
+        "explanation": "The <meta name='viewport'> tag helps control the layout and scaling of the document on mobile browsers."
+      },
+      {
+        "question": "What is the difference between the <section> and <div> tags?",
+        "choices": [
+          "<section> is semantic, <div> is not",
+          "<section> is for styling, <div> is for layout",
+          "<section> is for inline content, <div> is for block content"
+        ],
+        "answer": "<section> is semantic, <div> is not",
+        "explanation": "The <section> tag is a semantic element that represents a section of content, while <div> is a generic block-level container without semantic meaning."
+      },
+      {
+        "question": "What is the purpose of the <source> tag?",
+        "choices": [
+          "Specifies multiple media resources for elements like <audio> and <video>",
+          "Defines a source for JavaScript",
+          "Defines a fallback image"
+        ],
+        "answer": "Specifies multiple media resources for elements like <audio> and <video>",
+        "explanation": "The <source> tag is used to specify multiple media resources for elements like <audio> and <video> to provide fallback options."
+      },
+      {
+        "question": "What is the role of the <object> tag in HTML?",
+        "choices": [
+          "Defines an embedded object",
+          "Defines a section",
+          "Defines a hyperlink"
+        ],
+        "answer": "Defines an embedded object",
+        "explanation": "The <object> tag is used to embed objects such as images, videos, or other multimedia content within an HTML document."
+      },
+      {
+        "question": "How do you include a JavaScript file in an HTML document?",
+        "choices": [
+          "<script src='file.js'>",
+          "<js src='file.js'>",
+          "<script href='file.js'>"
+        ],
+        "answer": "<script src='file.js'>",
+        "explanation": "The <script> tag with the 'src' attribute is used to include an external JavaScript file in an HTML document."
+      },
+      {
+        "question": "What is the purpose of the <form> tag?",
+        "choices": [
+          "Defines a form for user input",
+          "Defines a section of the document",
+          "Defines a block of code"
+        ],
+        "answer": "Defines a form for user input",
+        "explanation": "The <form> tag is used to create an HTML form for gathering user input."
+      },
+      {
+        "question": "Which tag is used to define a description list?",
+        "choices": [
+          "<dl>",
+          "<list>",
+          "<description>"
+        ],
+        "answer": "<dl>",
+        "explanation": "The <dl> tag is used to define a description list, which consists of a series of terms and their descriptions."
+      }
+    ]
+  },
+  "CSS": {
+    "Easy": [
+      {
+        "question": "What does CSS stand for?",
+        "choices": [
+          "Cascading Style Sheets",
+          "Computer Style Sheets",
+          "Creative Style Sheets"
+        ],
+        "answer": "Cascading Style Sheets",
+        "explanation": "CSS stands for Cascading Style Sheets, which is used for styling HTML documents."
+      },
+      {
+        "question": "How do you apply a CSS style to an HTML element?",
+        "choices": [
+          "Using the 'style' attribute",
+          "Using the 'css' attribute",
+          "Using the 'link' tag"
+        ],
+        "answer": "Using the 'style' attribute",
+        "explanation": "You can apply CSS styles directly to an HTML element using the 'style' attribute."
+      },
+      {
+        "question": "How do you link a CSS file to an HTML document?",
+        "choices": [
+          "<link rel='stylesheet' href='styles.css'>",
+          "<style src='styles.css'>",
+          "<css file='styles.css'>"
+        ],
+        "answer": "<link rel='stylesheet' href='styles.css'>",
+        "explanation": "You link a CSS file to an HTML document using the <link> tag with the 'rel' attribute set to 'stylesheet'."
+      },
+      {
+        "question": "What property is used to change the text color in CSS?",
+        "choices": [
+          "color",
+          "font-color",
+          "text-color"
+        ],
+        "answer": "color",
+        "explanation": "The 'color' property in CSS is used to change the text color of an element."
+      },
+      {
+        "question": "How do you center a block element in CSS?",
+        "choices": [
+          "Using 'margin: auto'",
+          "Using 'text-align: center'",
+          "Using 'align: center'"
+        ],
+        "answer": "Using 'margin: auto'",
+        "explanation": "To center a block element horizontally, you use 'margin: auto' along with a specified width."
+      },
+      {
+        "question": "What property is used to change the font size in CSS?",
+        "choices": [
+          "font-size",
+          "text-size",
+          "font-style"
+        ],
+        "answer": "font-size",
+        "explanation": "The 'font-size' property is used to set the size of the font in CSS."
+      },
+      {
+        "question": "How do you select an element with a specific id in CSS?",
+        "choices": [
+          "Using '#id'",
+          "Using '.id'",
+          "Using 'id'"
+        ],
+        "answer": "Using '#id'",
+        "explanation": "In CSS, you select an element with a specific id using the '#' followed by the id name."
+      },
+      {
+        "question": "Which property is used to set the background color in CSS?",
+        "choices": [
+          "background-color",
+          "color",
+          "bgcolor"
+        ],
+        "answer": "background-color",
+        "explanation": "The 'background-color' property is used to set the background color of an element in CSS."
+      },
+      {
+        "question": "How do you apply multiple CSS classes to an element?",
+        "choices": [
+          "Separate classes with a space",
+          "Separate classes with a comma",
+          "Separate classes with a dot"
+        ],
+        "answer": "Separate classes with a space",
+        "explanation": "You apply multiple CSS classes to an element by listing them with spaces in the 'class' attribute."
+      },
+      {
+        "question": "What property is used to control the visibility of an element?",
+        "choices": [
+          "visibility",
+          "display",
+          "opacity"
+        ],
+        "answer": "visibility",
+        "explanation": "The 'visibility' property in CSS is used to control the visibility of an element, making it visible or hidden."
+      }
+    ],
+    "Medium": [
+      {
+        "question": "What does the 'box-sizing' property do?",
+        "choices": [
+          "Defines how the total width and height of an element are calculated",
+          "Sets the size of the font",
+          "Defines the spacing between elements"
+        ],
+        "answer": "Defines how the total width and height of an element are calculated",
+        "explanation": "The 'box-sizing' property controls how the width and height of an element are calculated, including padding and borders."
+      },
+      {
+        "question": "How do you apply styles to an element with a specific class in CSS?",
+        "choices": [
+          "Using '.class'",
+          "Using '#class'",
+          "Using 'class'"
+        ],
+        "answer": "Using '.class'",
+        "explanation": "To apply styles to an element with a specific class, you use the '.' followed by the class name in CSS."
+      },
+      {
+        "question": "What does the 'z-index' property control?",
+        "choices": [
+          "The stacking order of elements",
+          "The font size of elements",
+          "The spacing between elements"
+        ],
+        "answer": "The stacking order of elements",
+        "explanation": "The 'z-index' property controls the stacking order of positioned elements, determining which element appears on top."
+      },
+      {
+        "question": "How do you create a CSS grid layout?",
+        "choices": [
+          "Using the 'display: grid' property",
+          "Using the 'display: flex' property",
+          "Using the 'grid-layout' property"
+        ],
+        "answer": "Using the 'display: grid' property",
+        "explanation": "To create a grid layout in CSS, you use the 'display: grid' property on a container element."
+      },
+      {
+        "question": "What does the 'flex-direction' property do?",
+        "choices": [
+          "Defines the direction of flex items in a flex container",
+          "Sets the size of flex items",
+          "Defines the alignment of flex items"
+        ],
+        "answer": "Defines the direction of flex items in a flex container",
+        "explanation": "The 'flex-direction' property specifies the direction in which flex items are placed in a flex container (row or column)."
+      },
+      {
+        "question": "How do you create a responsive design in CSS?",
+        "choices": [
+          "Using media queries",
+          "Using fixed widths",
+          "Using absolute positioning"
+        ],
+        "answer": "Using media queries",
+        "explanation": "Media queries are used in CSS to apply different styles based on the device's screen size or other characteristics."
+      },
+      {
+        "question": "What is the default value of the 'position' property in CSS?",
+        "choices": [
+          "static",
+          "relative",
+          "absolute"
+        ],
+        "answer": "static",
+        "explanation": "The default value of the 'position' property is 'static', meaning the element is positioned according to the normal flow of the document."
+      },
+      {
+        "question": "How do you center text horizontally in CSS?",
+        "choices": [
+          "Using 'text-align: center'",
+          "Using 'margin: auto'",
+          "Using 'align: center'"
+        ],
+        "answer": "Using 'text-align: center'",
+        "explanation": "To center text horizontally within its containing element, you use the 'text-align: center' property."
+      },
+      {
+        "question": "What does the 'overflow' property control?",
+        "choices": [
+          "The handling of content that overflows an element's box",
+          "The spacing between elements",
+          "The visibility of elements"
+        ],
+        "answer": "The handling of content that overflows an element's box",
+        "explanation": "The 'overflow' property specifies how to handle content that exceeds the dimensions of its container, such as scrollbars or hidden content."
+      },
+      {
+        "question": "How do you target elements with a specific attribute in CSS?",
+        "choices": [
+          "Using '[attribute=value]'",
+          "Using '.attribute'",
+          "Using '#attribute'"
+        ],
+        "answer": "Using '[attribute=value]'",
+        "explanation": "You can target elements with a specific attribute by using square brackets and the attribute-value pair in CSS."
+      }
+    ],
+    "Hard": [
+      {
+        "question": "What is the 'calc()' function used for in CSS?",
+        "choices": [
+          "Performing calculations to determine CSS property values",
+          "Calculating the size of font",
+          "Defining animation durations"
+        ],
+        "answer": "Performing calculations to determine CSS property values",
+        "explanation": "The 'calc()' function in CSS allows for calculations to determine property values, such as widths or margins."
+      },
+      {
+        "question": "What is the purpose of the 'var()' function in CSS?",
+        "choices": [
+          "Using custom properties (CSS variables)",
+          "Defining multiple values for a property",
+          "Calculating lengths and sizes"
+        ],
+        "answer": "Using custom properties (CSS variables)",
+        "explanation": "The 'var()' function is used to access the value of custom properties (CSS variables) defined with the '--' syntax."
+      },
+      {
+        "question": "What does the 'clip-path' property do in CSS?",
+        "choices": [
+          "Defines a clipping region for an element",
+          "Sets the color of the border",
+          "Adjusts the opacity of an element"
+        ],
+        "answer": "Defines a clipping region for an element",
+        "explanation": "The 'clip-path' property creates a clipping region for an element, allowing only a portion of it to be visible."
+      },
+      {
+        "question": "What is the difference between 'transform: scale()' and 'transform: translate()'?",
+        "choices": [
+          "'scale()' resizes, 'translate()' moves",
+          "'scale()' rotates, 'translate()' resizes",
+          "'scale()' moves, 'translate()' rotates"
+        ],
+        "answer": "'scale()' resizes, 'translate()' moves",
+        "explanation": "'transform: scale()' resizes an element, while 'transform: translate()' moves an element from its original position."
+      },
+      {
+        "question": "How does the 'position: sticky' property work?",
+        "choices": [
+          "It switches between relative and fixed positioning based on scroll position",
+          "It always positions the element at the top",
+          "It positions the element relative to its parent container"
+        ],
+        "answer": "It switches between relative and fixed positioning based on scroll position",
+        "explanation": "'position: sticky' allows an element to switch between relative and fixed positioning depending on the scroll position."
+      },
+      {
+        "question": "What does the 'aspect-ratio' property do?",
+        "choices": [
+          "Maintains a specific aspect ratio of an element",
+          "Sets the width of an element",
+          "Defines the border radius of an element"
+        ],
+        "answer": "Maintains a specific aspect ratio of an element",
+        "explanation": "The 'aspect-ratio' property maintains a specific aspect ratio for an element, ensuring it scales proportionally."
+      },
+      {
+        "question": "What is the purpose of the 'grid-template-areas' property?",
+        "choices": [
+          "Defines named grid areas for layout",
+          "Sets the size of grid items",
+          "Controls the spacing between grid lines"
+        ],
+        "answer": "Defines named grid areas for layout",
+        "explanation": "'grid-template-areas' allows you to define named areas within a grid layout, making it easier to place and align grid items."
+      },
+      {
+        "question": "What does the 'mix-blend-mode' property control?",
+        "choices": [
+          "How an element's content blends with the background",
+          "The color of text",
+          "The size of an element"
+        ],
+        "answer": "How an element's content blends with the background",
+        "explanation": "The 'mix-blend-mode' property specifies how an element's content should blend with the background."
+      },
+      {
+        "question": "How does the 'filter' property work in CSS?",
+        "choices": [
+          "Applies graphical effects such as blur or brightness to an element",
+          "Changes the font style",
+          "Defines spacing between elements"
+        ],
+        "answer": "Applies graphical effects such as blur or brightness to an element",
+        "explanation": "The 'filter' property in CSS applies graphical effects like blur, brightness, and contrast to elements."
+      }
+    ]
+  }
+}
