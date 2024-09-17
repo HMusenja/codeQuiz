@@ -2,9 +2,6 @@ import inquirer from 'inquirer';
 import fs from 'fs';
 import chalk from 'chalk';
 
-
-
-
 let totalScore = 0;  // Cumulative score across sessions
 let highestScore = 0;  // Keeps track of the highest score achieved in a single session
 
@@ -19,7 +16,7 @@ function intro() {
     console.log("Earn points based on the difficulty level:");
     console.log(chalk.green("Easy: 2 points/question"));
     console.log(chalk.yellow("Medium: 3 points/question"));
-    console.log(chalk.orange("Hard: 5 points/question"));
+    console.log(chalk.red("Hard: 5 points/question"));
     console.log(chalk.cyan("\nTry to get the highest score and track your progress as you play!\n"));
 }
 
@@ -74,7 +71,7 @@ async function chooseNumQuestions() {
     return answers.numQuestions;
 }
 
-// Shuffle questions array
+// Shuffle array (used for shuffling both questions and answers)
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -118,12 +115,16 @@ function calculateScore(difficulty, isCorrect) {
 
 // Ask each question and evaluate the answer
 async function askQuestion(question, difficulty) {
+    // Create a copy of the answer choices and shuffle them
+    const shuffledChoices = [...question.choices];
+    shuffleArray(shuffledChoices); // Shuffle the answer choices
+
     const answers = await inquirer.prompt([
         {
             type: 'list',
             name: 'userAnswer',
             message: question.question,
-            choices: question.choices
+            choices: shuffledChoices
         }
     ]);
 
@@ -157,13 +158,48 @@ function displayScorecard(name, correctAnswers, incorrectAnswers, currentScore) 
     console.log(chalk.yellow(`Highest Score: ${highestScore} points\n`));
 }
 
+// Prompt user for next action (retake, next level, or exit)
+async function promptNextAction(currentDifficulty) {
+    const answers = await inquirer.prompt([
+        {
+            type: 'list',
+            name: 'nextAction',
+            message: 'What would you like to do next?',
+            choices: ['Retake the quiz', 'Go to next level', 'Exit']
+        }
+    ]);
+
+    if (answers.nextAction === 'Retake the quiz') {
+        console.log(chalk.blueBright('Retaking the quiz...'));
+        await startQuiz(currentDifficulty); // Retake the quiz
+    } else if (answers.nextAction === 'Go to next level') {
+        const nextDifficulty = getNextDifficulty(currentDifficulty);
+        if (nextDifficulty) {
+            console.log(chalk.blueBright(`Proceeding to ${nextDifficulty} level...`));
+            await startQuiz(nextDifficulty); // Start new game with next difficulty
+        } else {
+            console.log(chalk.blueBright('No higher difficulty levels available. Thank you for playing!'));
+        }
+    } else {
+        console.log(chalk.yellowBright('Thank you for playing! Exiting now...'));
+        process.exit(0); // Exit the game
+    }
+}
+
+// Get the next difficulty level
+function getNextDifficulty(currentDifficulty) {
+    const difficulties = ['Easy', 'Medium', 'Hard'];
+    const currentIndex = difficulties.indexOf(currentDifficulty);
+    return currentIndex < difficulties.length - 1 ? difficulties[currentIndex + 1] : null;
+}
+
 // Start the quiz
-async function startQuiz() {
+async function startQuiz(difficultyOverride) {
     intro();
 
     const name = await askName();
     const category = await chooseCategory();
-    const difficulty = await chooseDifficulty();
+    const difficulty = difficultyOverride || await chooseDifficulty();
     const numQuestions = await chooseNumQuestions();
 
     let filteredQuestions = filterQuestions(category, difficulty);
@@ -185,9 +221,11 @@ async function startQuiz() {
     // Update total score and display scorecard
     totalScore += currentScore;
     displayScorecard(name, correctAnswers, incorrectAnswers, currentScore);
+
+    // Prompt user for the next action
+    await promptNextAction(difficulty);
 }
 
 // Run the quiz
 startQuiz();
-
 
